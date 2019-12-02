@@ -111,11 +111,10 @@
 		F255F17F239469AF00442EC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F2A206EF2395AC5700E632F1 /* TotalUsers */,
 				F255F18423946FE300442EC9 /* Register */,
 				F255F18523946FEE00442EC9 /* Dashboard */,
 				F255F1862394700800442EC9 /* AccessoryView */,
-				F255F1872394745B00442EC9 /* TotalUsers.xib */,
-				F255F1892394766A00442EC9 /* TotalUsers.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +147,15 @@
 				F255F1932394EE2F00442EC9 /* VPVIew.xib */,
 			);
 			path = AccessoryView;
+			sourceTree = "<group>";
+		};
+		F2A206EF2395AC5700E632F1 /* TotalUsers */ = {
+			isa = PBXGroup;
+			children = (
+				F255F1872394745B00442EC9 /* TotalUsers.xib */,
+				F255F1892394766A00442EC9 /* TotalUsers.swift */,
+			);
+			path = TotalUsers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

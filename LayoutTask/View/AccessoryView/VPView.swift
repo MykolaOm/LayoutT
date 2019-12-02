@@ -27,21 +27,19 @@ class VPVIew: UIView {
     func commonInit() {
         Bundle.main.loadNibNamed(kCONTENT_XIB_NAME, owner: self, options: nil)
         contentView.fixInView(self)
-        progresView.progress = 0.7 //arcforrandom()
-        progresView.progressTintColor = .blue//UIColor(red: 1.0, green: 0.21, blue: 0.33, alpha: 1)
-        progresView.trackTintColor = UIColor.lightGray
+
+        progresView.progress = Float.random(in: 0 ..< 1)
+        progresView.progressTintColor = UIColor.lightBlue.color
+        progresView.trackTintColor = UIColor.specialGray.color
         progresView.layer.cornerRadius = 6.5
         progresView.clipsToBounds = true
         progresView.transform = CGAffineTransform(rotationAngle: .pi / -2)
-//        progresView.transform = CGAffineTransform(rotationAngle: .pi)
-//        let modifierW: CGFloat = self.bounds.width > self.bounds.height ? self.contentView.bounds.width/5.0 : /self.contentView.bounds.height/0.5
-//        let modofierH: CGFloat = self.bounds.width > self.bounds.height ? self.contentView.bounds.height/5.0 : self.contentView.bounds.width/5.0
         progresView.translatesAutoresizingMaskIntoConstraints = false
         progresView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         progresView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         progresView.widthAnchor.constraint(equalToConstant: self.bounds.height).isActive = true
-        progresView.heightAnchor.constraint(equalToConstant: self.bounds.width).isActive = true
-        self.layoutSubviews()
-        self.backgroundColor = superview?.backgroundColor
+        progresView.heightAnchor.constraint(equalToConstant: 8).isActive = true
+        self.backgroundColor = .clear
+        self.contentView.backgroundColor = .clear
     }
 }

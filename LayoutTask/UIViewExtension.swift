@@ -19,9 +19,35 @@ extension UIView
         NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
         NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
     }
+
+    
+}
+class RoundedView: UIView {
+    override init(frame: CGRect) {
+        super.init(frame:frame)
+        roundedCorners()
+    }
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        roundedCorners()
+    }
+        func roundedCorners() {
+            layer.cornerRadius = 5
+        }
 }
 
 //TODO: @IBDesignable to set corner radius
+extension UIColor {
+    struct lightBlue {
+        static let cgColor = UIColor(displayP3Red: 31.0/255, green: 142/255, blue: 241/255, alpha: 1).cgColor
+       static let color = UIColor(displayP3Red: 31.0/255, green: 142/255, blue: 241/255, alpha: 1)
+    }
+    struct specialGray {
+        static let cgColor = UIColor(displayP3Red: 57.0/255, green: 58/255, blue: 71/255, alpha: 1).cgColor
+        static let color = UIColor(displayP3Red: 57.0/255, green: 58/255, blue: 71/255, alpha: 1)
+    }
+}
+
 @IBDesignable extension UIButton {
 
     @IBInspectable var borderWidth: CGFloat {

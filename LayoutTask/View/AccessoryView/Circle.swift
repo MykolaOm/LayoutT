@@ -31,14 +31,15 @@ class Circle: UIView {
         let circularPath = UIBezierPath(arcCenter: center, radius: self.frame.width/2.5, startAngle: -CGFloat.pi / 2, endAngle: 1.5 * CGFloat.pi, clockwise: true)
         trackLayer.path = circularPath.cgPath
         
-        trackLayer.strokeColor = UIColor.lightGray.cgColor
+        trackLayer.strokeColor = UIColor.specialGray.cgColor
         trackLayer.lineWidth = 8
         trackLayer.fillColor = UIColor.clear.cgColor
         trackLayer.lineCap = CAShapeLayerLineCap.round
         self.layer.addSublayer(trackLayer)
         shapeLayer.path = circularPath.cgPath
         
-        shapeLayer.strokeColor = UIColor.blue.cgColor
+//        shapeLayer.strokeColor = UIColor.blue.cgColor 31 142 241
+        shapeLayer.strokeColor = UIColor.lightBlue.cgColor//UIColor(displayP3Red: 31.0/255, green: 142/255, blue: 241/255, alpha: 1).cgColor
         shapeLayer.lineWidth = 12
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineCap = CAShapeLayerLineCap.round
