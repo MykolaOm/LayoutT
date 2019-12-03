@@ -22,21 +22,7 @@ extension UIView
 
     
 }
-class RoundedView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame:frame)
-        roundedCorners()
-    }
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        roundedCorners()
-    }
-        func roundedCorners() {
-            layer.cornerRadius = 5
-        }
-}
 
-//TODO: @IBDesignable to set corner radius
 extension UIColor {
     struct lightBlue {
         static let cgColor = UIColor(displayP3Red: 31.0/255, green: 142/255, blue: 241/255, alpha: 1).cgColor
@@ -48,6 +34,7 @@ extension UIColor {
     }
 }
 
+//TODO: @IBDesignable to set corner radius
 @IBDesignable extension UIButton {
 
     @IBInspectable var borderWidth: CGFloat {

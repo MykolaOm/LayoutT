@@ -21,12 +21,13 @@
 		F255F176239459A400442EC9 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F255F175239459A400442EC9 /* Register.swift */; };
 		F255F178239459ED00442EC9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F255F177239459ED00442EC9 /* UIViewExtension.swift */; };
 		F255F17A23945D0800442EC9 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F255F17923945D0800442EC9 /* Circle.swift */; };
-		F255F18123946A3500442EC9 /* VerticalProgressVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F255F18023946A3500442EC9 /* VerticalProgressVIew.swift */; };
-		F255F18323946AD500442EC9 /* VerticalProgressVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = F255F18223946AD500442EC9 /* VerticalProgressVIew.xib */; };
 		F255F1882394745B00442EC9 /* TotalUsers.xib in Resources */ = {isa = PBXBuildFile; fileRef = F255F1872394745B00442EC9 /* TotalUsers.xib */; };
 		F255F18A2394766A00442EC9 /* TotalUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F255F1892394766A00442EC9 /* TotalUsers.swift */; };
 		F255F1922394EE0200442EC9 /* VPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F255F1912394EE0200442EC9 /* VPView.swift */; };
 		F255F1942394EE2F00442EC9 /* VPVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = F255F1932394EE2F00442EC9 /* VPVIew.xib */; };
+		F27DC2552396FC4B007F11C9 /* DashedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DC2542396FC4B007F11C9 /* DashedLine.swift */; };
+		F2A206F12395BE9B00E632F1 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A206F02395BE9B00E632F1 /* RoundedView.swift */; };
+		F2A206F32396EF6D00E632F1 /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A206F22396EF6D00E632F1 /* DropDownButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +47,13 @@
 		F255F175239459A400442EC9 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		F255F177239459ED00442EC9 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F255F17923945D0800442EC9 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
-		F255F18023946A3500442EC9 /* VerticalProgressVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalProgressVIew.swift; sourceTree = "<group>"; };
-		F255F18223946AD500442EC9 /* VerticalProgressVIew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalProgressVIew.xib; sourceTree = "<group>"; };
 		F255F1872394745B00442EC9 /* TotalUsers.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalUsers.xib; sourceTree = "<group>"; };
 		F255F1892394766A00442EC9 /* TotalUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalUsers.swift; sourceTree = "<group>"; };
 		F255F1912394EE0200442EC9 /* VPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPView.swift; sourceTree = "<group>"; };
 		F255F1932394EE2F00442EC9 /* VPVIew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VPVIew.xib; sourceTree = "<group>"; };
+		F27DC2542396FC4B007F11C9 /* DashedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLine.swift; sourceTree = "<group>"; };
+		F2A206F02395BE9B00E632F1 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		F2A206F22396EF6D00E632F1 /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,10 +143,11 @@
 			isa = PBXGroup;
 			children = (
 				F255F17923945D0800442EC9 /* Circle.swift */,
-				F255F18023946A3500442EC9 /* VerticalProgressVIew.swift */,
-				F255F18223946AD500442EC9 /* VerticalProgressVIew.xib */,
 				F255F1912394EE0200442EC9 /* VPView.swift */,
 				F255F1932394EE2F00442EC9 /* VPVIew.xib */,
+				F2A206F02395BE9B00E632F1 /* RoundedView.swift */,
+				F2A206F22396EF6D00E632F1 /* DropDownButton.swift */,
+				F27DC2542396FC4B007F11C9 /* DashedLine.swift */,
 			);
 			path = AccessoryView;
 			sourceTree = "<group>";
@@ -220,7 +223,6 @@
 				F255F15E239407D700442EC9 /* Assets.xcassets in Resources */,
 				F255F1942394EE2F00442EC9 /* VPVIew.xib in Resources */,
 				F255F16D23940F5000442EC9 /* Poppins-Bold.ttf in Resources */,
-				F255F18323946AD500442EC9 /* VerticalProgressVIew.xib in Resources */,
 				F255F16E23940F5000442EC9 /* Poppins-Regular.ttf in Resources */,
 				F255F1882394745B00442EC9 /* TotalUsers.xib in Resources */,
 				F255F16923940B1200442EC9 /* Register.xib in Resources */,
@@ -239,13 +241,15 @@
 				F255F17A23945D0800442EC9 /* Circle.swift in Sources */,
 				F255F18A2394766A00442EC9 /* TotalUsers.swift in Sources */,
 				F255F178239459ED00442EC9 /* UIViewExtension.swift in Sources */,
+				F2A206F32396EF6D00E632F1 /* DropDownButton.swift in Sources */,
+				F27DC2552396FC4B007F11C9 /* DashedLine.swift in Sources */,
 				F255F159239407D500442EC9 /* ViewController.swift in Sources */,
 				F255F155239407D500442EC9 /* AppDelegate.swift in Sources */,
 				F255F17223944B0800442EC9 /* Dashboard.swift in Sources */,
 				F255F157239407D500442EC9 /* SceneDelegate.swift in Sources */,
 				F255F176239459A400442EC9 /* Register.swift in Sources */,
 				F255F1922394EE0200442EC9 /* VPView.swift in Sources */,
-				F255F18123946A3500442EC9 /* VerticalProgressVIew.swift in Sources */,
+				F2A206F12395BE9B00E632F1 /* RoundedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,7 +38,8 @@ class VPVIew: UIView {
         progresView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         progresView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         progresView.widthAnchor.constraint(equalToConstant: self.bounds.height).isActive = true
-        progresView.heightAnchor.constraint(equalToConstant: 8).isActive = true
+        let progresWidth: CGFloat = self.contentView.bounds.width > self.contentView.bounds.height ? 3.0 : 9.0
+        progresView.heightAnchor.constraint(equalToConstant: progresWidth).isActive = true
         self.backgroundColor = .clear
         self.contentView.backgroundColor = .clear
     }
