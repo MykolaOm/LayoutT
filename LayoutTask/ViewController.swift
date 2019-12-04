@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
 
-    // NOTE: USE SHAKE GESTURE TO GO BACK TO BUTTONS
+    // NOTE: USE SHAKE GESTURE TO GO BACK
     // PS. HOTKEY --> CONTROL + COMMAND + Z 
     override func viewDidLoad() {
         super.viewDidLoad()
