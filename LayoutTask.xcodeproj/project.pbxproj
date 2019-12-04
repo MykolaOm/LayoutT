@@ -26,8 +26,9 @@
 		F255F1922394EE0200442EC9 /* VPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F255F1912394EE0200442EC9 /* VPView.swift */; };
 		F255F1942394EE2F00442EC9 /* VPVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = F255F1932394EE2F00442EC9 /* VPVIew.xib */; };
 		F27DC2552396FC4B007F11C9 /* DashedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DC2542396FC4B007F11C9 /* DashedLine.swift */; };
+		F27DC2572396FF3E007F11C9 /* RoundDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DC2562396FF3E007F11C9 /* RoundDot.swift */; };
+		F27DC25D239719D7007F11C9 /* TriangleVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DC25C239719D7007F11C9 /* TriangleVIew.swift */; };
 		F2A206F12395BE9B00E632F1 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A206F02395BE9B00E632F1 /* RoundedView.swift */; };
-		F2A206F32396EF6D00E632F1 /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A206F22396EF6D00E632F1 /* DropDownButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +53,9 @@
 		F255F1912394EE0200442EC9 /* VPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPView.swift; sourceTree = "<group>"; };
 		F255F1932394EE2F00442EC9 /* VPVIew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VPVIew.xib; sourceTree = "<group>"; };
 		F27DC2542396FC4B007F11C9 /* DashedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLine.swift; sourceTree = "<group>"; };
+		F27DC2562396FF3E007F11C9 /* RoundDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundDot.swift; sourceTree = "<group>"; };
+		F27DC25C239719D7007F11C9 /* TriangleVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleVIew.swift; sourceTree = "<group>"; };
 		F2A206F02395BE9B00E632F1 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
-		F2A206F22396EF6D00E632F1 /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +148,9 @@
 				F255F1912394EE0200442EC9 /* VPView.swift */,
 				F255F1932394EE2F00442EC9 /* VPVIew.xib */,
 				F2A206F02395BE9B00E632F1 /* RoundedView.swift */,
-				F2A206F22396EF6D00E632F1 /* DropDownButton.swift */,
 				F27DC2542396FC4B007F11C9 /* DashedLine.swift */,
+				F27DC2562396FF3E007F11C9 /* RoundDot.swift */,
+				F27DC25C239719D7007F11C9 /* TriangleVIew.swift */,
 			);
 			path = AccessoryView;
 			sourceTree = "<group>";
@@ -238,15 +241,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27DC25D239719D7007F11C9 /* TriangleVIew.swift in Sources */,
 				F255F17A23945D0800442EC9 /* Circle.swift in Sources */,
 				F255F18A2394766A00442EC9 /* TotalUsers.swift in Sources */,
 				F255F178239459ED00442EC9 /* UIViewExtension.swift in Sources */,
-				F2A206F32396EF6D00E632F1 /* DropDownButton.swift in Sources */,
 				F27DC2552396FC4B007F11C9 /* DashedLine.swift in Sources */,
 				F255F159239407D500442EC9 /* ViewController.swift in Sources */,
 				F255F155239407D500442EC9 /* AppDelegate.swift in Sources */,
 				F255F17223944B0800442EC9 /* Dashboard.swift in Sources */,
 				F255F157239407D500442EC9 /* SceneDelegate.swift in Sources */,
+				F27DC2572396FF3E007F11C9 /* RoundDot.swift in Sources */,
 				F255F176239459A400442EC9 /* Register.swift in Sources */,
 				F255F1922394EE0200442EC9 /* VPView.swift in Sources */,
 				F2A206F12395BE9B00E632F1 /* RoundedView.swift in Sources */,

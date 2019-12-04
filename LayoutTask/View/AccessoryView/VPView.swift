@@ -42,5 +42,6 @@ class VPVIew: UIView {
         progresView.heightAnchor.constraint(equalToConstant: progresWidth).isActive = true
         self.backgroundColor = .clear
         self.contentView.backgroundColor = .clear
+        layoutIfNeeded()
     }
 }

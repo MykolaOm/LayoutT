@@ -15,40 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52W-uu-Chq">
-                                <rect key="frame" x="92" y="232" width="231" height="30"/>
-                                <state key="normal" title="Screen 1"/>
-                                <connections>
-                                    <action selector="popRegisterView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlC-0U-ZvO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fj-OD-G3V">
-                                <rect key="frame" x="92" y="596" width="231" height="30"/>
-                                <state key="normal" title="Screen 3"/>
-                                <connections>
-                                    <action selector="popTotalUsersVIew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieR-ho-eiw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-wA-3xU">
-                                <rect key="frame" x="92" y="414" width="231" height="30"/>
-                                <state key="normal" title="Screen 2"/>
-                                <connections>
-                                    <action selector="popDashboardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJS-Fa-4eI"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nlh-dd-I44">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52W-uu-Chq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
+                                        <state key="normal" title="Screen 1"/>
+                                        <connections>
+                                            <action selector="popRegisterView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlC-0U-ZvO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-wA-3xU">
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
+                                        <state key="normal" title="Screen 2"/>
+                                        <connections>
+                                            <action selector="popDashboardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJS-Fa-4eI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fj-OD-G3V">
+                                        <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
+                                        <state key="normal" title="Screen 3"/>
+                                        <connections>
+                                            <action selector="popTotalUsersVIew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieR-ho-eiw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="4fj-OD-G3V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="AXx-Yq-4Ci"/>
-                            <constraint firstItem="52W-uu-Chq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="DPd-PY-e0I"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="52W-uu-Chq" secondAttribute="trailing" constant="91" id="KpK-Si-HOX"/>
-                            <constraint firstItem="Bg2-wA-3xU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="Mwk-IQ-O4s"/>
-                            <constraint firstItem="4fj-OD-G3V" firstAttribute="top" secondItem="Bg2-wA-3xU" secondAttribute="bottom" constant="152" id="OoN-JH-z6W"/>
-                            <constraint firstItem="52W-uu-Chq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="Ssy-LH-0JV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bg2-wA-3xU" secondAttribute="trailing" constant="91" id="Tdm-u9-PGJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4fj-OD-G3V" secondAttribute="trailing" constant="91" id="qTe-3X-l9l"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4fj-OD-G3V" secondAttribute="bottom" constant="236" id="tbe-DF-zPC"/>
-                            <constraint firstItem="Bg2-wA-3xU" firstAttribute="top" secondItem="52W-uu-Chq" secondAttribute="bottom" constant="152" id="x4e-f7-kkc"/>
+                            <constraint firstItem="Nlh-dd-I44" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Ja-SV-Df3"/>
+                            <constraint firstItem="Nlh-dd-I44" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Exh-Z3-nbZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nlh-dd-I44" secondAttribute="trailing" id="KqL-9o-lmW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nlh-dd-I44" secondAttribute="bottom" id="vSw-3h-cF3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

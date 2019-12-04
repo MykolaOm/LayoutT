@@ -18,6 +18,6 @@ class RoundedView: UIView {
         roundedCorners()
     }
         func roundedCorners() {
-            layer.cornerRadius = self.bounds.width < 100 ? 13 : 5
+            layer.cornerRadius = self.bounds.height < 100 ? 13 : 5
     }
 }

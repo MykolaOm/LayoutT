@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Register" customModule="LayoutTask" customModuleProvider="target">
             <connections>
+                <outlet property="button" destination="KfM-ig-tEg" id="6Bd-8T-U7u"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="xtA-g2-fm1"/>
             </connections>
         </placeholder>
@@ -18,12 +19,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYz-hL-7Qs">
-                    <rect key="frame" x="83" y="157" width="248" height="43"/>
+                    <rect key="frame" x="83" y="157" width="248" height="50.5"/>
                     <attributedString key="attributedText">
                         <fragment content="REGISTER">
                             <attributes>
                                 <color key="NSColor" red="0.12156862745098039" green="0.55686274509803924" blue="0.94509803921568625" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                                <font key="NSFont" metaFont="system" size="36"/>
+                                <font key="NSFont" size="36" name="Poppins-Bold"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
@@ -36,42 +37,45 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="61" id="CsN-h7-5VA"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal" title="REGISTER"/>
+                    <state key="normal" title="REGISTER">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xJK-QR-56w">
-                    <rect key="frame" x="36" y="227" width="341" height="436"/>
+                    <rect key="frame" x="36" y="234.5" width="341" height="428.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kO0-le-UNU">
-                            <rect key="frame" x="0.0" y="0.0" width="341" height="76"/>
+                            <rect key="frame" x="0.0" y="0.0" width="341" height="74.5"/>
                             <color key="backgroundColor" red="0.2196078431372549" green="0.23137254901960785" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4nr-wu-9Hz">
-                            <rect key="frame" x="0.0" y="90" width="341" height="76"/>
+                            <rect key="frame" x="0.0" y="88.5" width="341" height="74.5"/>
                             <color key="backgroundColor" red="0.2196078431372549" green="0.23137254901960785" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YWX-7j-z5M">
-                            <rect key="frame" x="0.0" y="180" width="341" height="76"/>
+                            <rect key="frame" x="0.0" y="177" width="341" height="74.5"/>
                             <color key="backgroundColor" red="0.2196078431372549" green="0.23137254901960785" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYL-ac-pOk">
-                            <rect key="frame" x="0.0" y="270" width="341" height="76"/>
+                            <rect key="frame" x="0.0" y="265.5" width="341" height="74.5"/>
                             <color key="backgroundColor" red="0.2196078431372549" green="0.23137254901960785" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirm password" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tED-sS-ORw">
-                            <rect key="frame" x="0.0" y="360" width="341" height="76"/>
+                            <rect key="frame" x="0.0" y="354" width="341" height="74.5"/>
                             <color key="backgroundColor" red="0.2196078431372549" green="0.23137254901960785" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>

@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
 
     // NOTE: USE SHAKE GESTURE TO GO BACK TO BUTTONS
     // PS. HOTKEY --> CONTROL + COMMAND + Z 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         
     }
@@ -38,7 +39,7 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?){
         if motion == .motionShake {
             self.view.subviews.forEach { view in
-                if !(view is UIButton) {
+                if !(view is UIStackView) {
                     view.removeFromSuperview()
                 }
             }

@@ -9,7 +9,7 @@
 import UIKit
 
 class DashedLine: UIView {
-
+    let numberOdDots: Int = 6
     let shapeLayer = CAShapeLayer()
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,15 +23,28 @@ class DashedLine: UIView {
 
     func drawDottedLine() {
         self.backgroundColor = superview?.backgroundColor
-        let shapeLayer = CAShapeLayer()
-        shapeLayer.strokeColor = UIColor.lightBlue.cgColor
+        
+        let xPos = self.bounds.midX
+        let minY = self.bounds.minY
+        let maxY = self.bounds.maxY
+        let topPoint = CGPoint(x: xPos, y: maxY)
+        let bottomPoint = CGPoint(x: xPos, y: minY)
+        let path = UIBezierPath()
+        path.move(to: topPoint)
+        path.addLine(to: bottomPoint)
+        shapeLayer.strokeColor = UIColor.lightBlue.cgColor.copy(alpha: 0.5)
         shapeLayer.lineWidth = 1
-        shapeLayer.lineDashPattern = [7, 3]
-        let topPoint = CGPoint(x: self.bounds.midX, y: self.bounds.maxY)
-        let bottomPoint = CGPoint(x: self.bounds.midX, y: self.bounds.minX)
-        let path = CGMutablePath()
-        path.addLines(between: [topPoint,bottomPoint])
-        shapeLayer.path = path
+        shapeLayer.path = path.cgPath
         self.layer.addSublayer(shapeLayer)
+        let circleWidth: CGFloat = 6.0
+        let longevity = maxY - minY
+        let distance = longevity/CGFloat(numberOdDots)
+        var y = minY
+        for _ in 0..<numberOdDots-1 {
+            self.addSubview(RoundDot(frame: CGRect(x: xPos, y: y, width: circleWidth, height: circleWidth)))
+            y = y + distance + circleWidth + 1
+        }
+        self.addSubview(RoundDot(frame: CGRect(x: xPos, y: maxY - 2.0, width: 6, height: 6)))
     }
+    
 }

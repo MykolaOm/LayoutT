@@ -12,7 +12,8 @@ class Register: UIView {
 
  let kCONTENT_XIB_NAME = "Register"
         @IBOutlet var contentView: UIView!
-        
+        @IBOutlet weak var button: UIButton!
+    
         override init(frame: CGRect) {
             super.init(frame: frame)
             commonInit()
@@ -26,6 +27,7 @@ class Register: UIView {
         func commonInit() {
             Bundle.main.loadNibNamed(kCONTENT_XIB_NAME, owner: self, options: nil)
             contentView.fixInView(self)
+            self.button.layer.cornerRadius = 5	
         }
 }
 

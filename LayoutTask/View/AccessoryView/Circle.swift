@@ -21,15 +21,30 @@ class Circle: UIView {
         super.init(coder: aDecoder)
         drawCircle()
     }
-
+    
+    
     func drawCircle(){
-        let center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
-        self.backgroundColor = superview?.backgroundColor
+        let center = CGPoint(x: self.bounds.midX, y: self.bounds.midY  )
+        self.backgroundColor = superview?.backgroundColor	
+        let isBigCircle = self.bounds.width > 70
+        let label = UILabel(frame: self.bounds)
+        label.fixInView(self)
+        label.textAlignment = .center
+        label.numberOfLines = 2
         let trackLayer = CAShapeLayer()
-        let radius = self.frame.width/2.5
+        let radius = bounds.width < bounds.height ? bounds.width/1.7 : bounds.height/1.7
         let circularPath = UIBezierPath(arcCenter: center, radius: radius, startAngle: -CGFloat.pi / 2, endAngle: 1.5 * CGFloat.pi, clockwise: true)
         trackLayer.path = circularPath.cgPath
-        var isBigCircle = self.bounds.width > 70
+        let size: CGFloat = isBigCircle ? 20.0 : 10.0
+        let mainTextFont = UIFont(name: "Poppins-Regular", size: size)
+        let mainText = NSMutableAttributedString(string: "50%", attributes: [NSAttributedString.Key.font : mainTextFont])
+        if isBigCircle {
+            let additionalFont = UIFont(name: "Poppins-Regular", size: size/2)
+            let additional = NSAttributedString(string: "\nUser", attributes: [NSAttributedString.Key.font : additionalFont])
+            mainText.append(additional)
+        }
+        label.attributedText = mainText
+        self.addSubview(label)
         trackLayer.strokeColor = UIColor.specialGray.cgColor
         trackLayer.lineWidth = 8
         trackLayer.fillColor = UIColor.clear.cgColor
@@ -42,19 +57,6 @@ class Circle: UIView {
         shapeLayer.lineCap = CAShapeLayerLineCap.round
         shapeLayer.strokeEnd = 0.5
         self.layer.addSublayer(shapeLayer)
-        let label = UILabel(frame: self.bounds)
-        label.textAlignment = .center
-        label.numberOfLines = 2
-        
-        let size: CGFloat = isBigCircle ? 20.0 : 10.0
-        let mainTextFont = UIFont(name: "Poppins-Regular", size: size)
-        let mainText = NSMutableAttributedString(string: "50%", attributes: [NSAttributedString.Key.font : mainTextFont])
-        if isBigCircle {
-            let additionalFont = UIFont(name: "Poppins-Regular", size: size/2)
-            let additional = NSAttributedString(string: "\nUser", attributes: [NSAttributedString.Key.font : additionalFont])
-            mainText.append(additional)
-        }
-        label.attributedText = mainText
-        self.addSubview(label)
+//
     }
 }
