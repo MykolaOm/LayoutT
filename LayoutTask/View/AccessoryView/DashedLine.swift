@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashedLine: UIView {
+class DashedLine: UIView { // firstly I thought that it was dashed that's why such name
     let numberOdDots: Int = 6
     let shapeLayer = CAShapeLayer()
     override init(frame: CGRect) {
